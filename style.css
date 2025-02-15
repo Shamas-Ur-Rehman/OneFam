@@ -41,13 +41,40 @@ img{
 	background-image: url(images/bg2.jpeg);
 
 }
+.content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0; /* Remove margin to make the div full width and height */
+    text-align: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    font-size: 1.2em;
+}
 .textBlock {
    
-    color: white;
+    width: 100%;
     padding: 20px;
     width: 97%;
 	font-size: 16px;
 	font-weight: bold;
+	
 }
 
 .textBlock-heading {
@@ -112,7 +139,7 @@ img{
 	margin-right: 10px;
 }
 .social-media{
-    background:url(../img/social-media-bg1.jpg);
+    background:url(../img/social-media-bgr1.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -281,8 +308,8 @@ img{
 #traveler{
 	background: url(images/bg2.jpeg) 50% no-repeat fixed;
 	
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -304,8 +331,8 @@ img{
 #third{
 	background: url(images/bg3.jpeg) 50% 0 no-repeat fixed;
 	background-color:#b1deed;
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -322,8 +349,8 @@ img{
 #hipster{
 	background: url(images/fond3.jpg) 50% 0 no-repeat fixed;
 	background-color:#f79cc1;
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -340,8 +367,8 @@ img{
 #fond4{
 	background: url(images/fond4.jpg) 50% 0 no-repeat fixed;
 	background-color:#abe7f4;
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -358,8 +385,8 @@ img{
 #fond5{
 	background: url(images/bg2.jpeg) 50% 0 no-repeat fixed;
 	background-color:black;
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -373,10 +400,9 @@ img{
 	z-index: 10;
 }
 #fond6{
-	background: url(images/fond6.jpg) 50% 0 no-repeat fixed;
+	background: url(images/bgr3.jpg) 50% 0 no-repeat fixed;
 	background-color:#a0e3ff;
-	background-size:1071px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -390,16 +416,22 @@ img{
 	z-index: 10;
 }
 #fond7{
-	background: url(images/fond7.jpg) 50% 0 no-repeat fixed;
-	background-color:#f7ca7d;
-	background-size:1071px;
-	color: white;
-	height: 120%;
-	padding:0;	
+	background: url('images/bgr7.jpg') center center / cover no-repeat fixed;
+
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond7 .bg{
-	background: url(images/7.png) 50% 84% no-repeat fixed;
+	background: url(images/7.png) 50% 82% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -407,11 +439,9 @@ img{
 	z-index: 10;
 }
 #fond8{
-	background: url(images/fond8.jpg) 50% 0 no-repeat fixed;
+	background: url(images/bgr8.jpg) 50% 0 no-repeat fixed;
 	background-color:#fbdff8;
-	background-size:1071px;
-
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -425,11 +455,11 @@ img{
 	z-index: 10;
 }
 #fond9{
-	background: url(images/fond9.jpg) 50% 0 no-repeat fixed;
+	background: url(images/bgr9.jpg) 50% 0 no-repeat fixed;
 	background-color:#c6deff;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -443,11 +473,11 @@ img{
 	z-index: 10;
 }
 #fond10{
-	background: url(images/fond10.jpg) 50% 0 no-repeat fixed;
-	background-color:black;
-	background-size:1071px;
 
-	color: white;
+	background-color:black;
+
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -463,15 +493,15 @@ img{
 #fond11{
 	background: url(images/fond11.jpg) 50% 0 no-repeat fixed;
 	background-color:#f8c075;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond11 .bg{
-	background: url(images/11.png) 50% 80% no-repeat fixed;
+	background: url(images/1.png) 50% 80% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -481,9 +511,9 @@ img{
 #fond12{
 	background: url(images/fond122.jpg) 50% 0 no-repeat fixed;
 	background-color:black;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -499,8 +529,8 @@ img{
 #fond13{
 	background: url(images/fond13.jpg) 50% 0 no-repeat fixed;
 	background-color:black;
-	background-size:1071px;
-   color: white;
+
+   width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -517,15 +547,15 @@ img{
 #fond14{
 	background: url(images/fond14.jpg) 50% 0 no-repeat fixed;
 	background-color:#dbdbdb;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond14 .bg{
-	background: url(images/14.png) 50% 83.5% no-repeat fixed;
+	background: url(images/17.png) 50% 83.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -535,9 +565,9 @@ img{
 #fond15{
 	background: url(images/fond15.jpg) 50% 0 no-repeat fixed;
 	background-color:#fddcae;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -553,9 +583,9 @@ img{
 #fond16{
 	background: url(images/fond16.jpg) 50% 0 no-repeat fixed;
 	background-color:#fb9d79;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -571,9 +601,9 @@ img{
 #fond17{
 	background: url(images/fond17.jpg) 50% 0 no-repeat fixed;
 	background-color:#f6978f;
-	background-size:1071px;
 
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -588,11 +618,12 @@ img{
 }
 
 #fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 	background-color:#000;
-	background-size:1071px;
-	color: white;
-	height: 120%;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
 	width:100%;
 	margin: 0 auto;
 	padding-top:0;
@@ -687,10 +718,11 @@ img{
 @media (min-height:649px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -713,10 +745,11 @@ background-color:#000;
 @media (min-height:679px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
-	background-size:1071px;
-	color: white;
+
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -741,7 +774,7 @@ background-color:#000;
 	
 	background-size:1200px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -763,7 +796,7 @@ background-color:#000;
 	background-color:#b1deed;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -782,7 +815,7 @@ color: white;
 	background-color:#f79cc1;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -801,7 +834,7 @@ color: white;
 	background-color:#abe7f4;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -820,7 +853,7 @@ color: white;
 	background-color:b;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -834,13 +867,18 @@ color: white;
 	z-index: 10;
 }
 #fond6{
-	background: url(images/fond6.jpg) 50% 0 no-repeat fixed;
-	background-color:#a0e3ff;
-	background-size:1200px;
+	background: url('images/bgr3.jpg') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond6 .bg{
@@ -852,17 +890,22 @@ color: white;
 	z-index: 10;
 }
 #fond7{
-	background: url(images/fond7.jpg) 50% 0 no-repeat fixed;
-	background-color:#f7ca7d;
-	background-size:1200px;
+	 background: url() center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond7 .bg{
-	background: url(images/7.png) 50% 84% no-repeat fixed;
+	2
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -870,13 +913,18 @@ color: white;
 	z-index: 10;
 }
 #fond8{
-	background: url(images/fond8.jpg) 50% 0 no-repeat fixed;
-	background-color:#fbdff8;
-	background-size:1200px;
+	 background: url('images/') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond8 .bg{
@@ -888,13 +936,18 @@ color: white;
 	z-index: 10;
 }
 #fond9{
-	background: url(images/fond9.jpg) 50% 0 no-repeat fixed;
-	background-color:#c6deff;
-	background-size:1200px;
+	 background: url('images/') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond9 .bg{
@@ -906,12 +959,18 @@ color: white;
 	z-index: 10;
 }
 #fond10{
-	background: url(images/fond10.jpg) 50% 0 no-repeat fixed;
-	background-color:black;
-	background-size:1200px;
-color: white;
-	height: 120%;
-	padding:0;	
+	background: url('images/bgr10.jpg') center center / cover no-repeat fixed;
+
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond10 .bg{
@@ -927,13 +986,13 @@ color: white;
 	background-color:#f8c075;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond11 .bg{
-	background: url(images/11.png) 50% 80% no-repeat fixed;
+	background: url(images/1.png) 50% 80% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -945,7 +1004,7 @@ color: white;
 	background-color:black;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -963,7 +1022,7 @@ color: white;
 	background-color:black;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -981,13 +1040,13 @@ color: white;
 	background-color:#dbdbdb;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond14 .bg{
-	background: url(images/14.png) 50% 83.5% no-repeat fixed;
+	background: url(images/17.png) 50% 83.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -999,7 +1058,7 @@ color: white;
 	background-color:#fddcae;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1017,7 +1076,7 @@ color: white;
 	background-color:#fb9d79;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1035,7 +1094,7 @@ color: white;
 	background-color:#f6978f;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1053,11 +1112,12 @@ color: white;
 @media (min-height:720px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
-	background-size:1071px;
+
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1079,11 +1139,12 @@ background-color:#000;
 @media (min-height:750px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
-	background-size:1071px;
+
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1105,11 +1166,12 @@ background-color:#000;
 @media (min-height:780px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
-	background-size:1071px;
+
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1132,11 +1194,12 @@ background-color:#000;
 @media (min-height:800px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
 	background-size:1200px;
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1160,7 +1223,7 @@ background-color:#000;
 	
 	background-size:1200px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1182,7 +1245,7 @@ background-color:#000;
 	background-color:#b1deed;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1201,7 +1264,7 @@ color: white;
 	background-color:#f79cc1;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1220,7 +1283,7 @@ color: white;
 	background-color:#abe7f4;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1239,7 +1302,7 @@ color: white;
 	background-color:b;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1253,13 +1316,18 @@ color: white;
 	z-index: 10;
 }
 #fond6{
-	background: url(images/fond6.jpg) 50% 0 no-repeat fixed;
-	background-color:#a0e3ff;
-	background-size:1200px;
+	background: url('images/bgr3.jpg') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond6 .bg{
@@ -1271,17 +1339,22 @@ color: white;
 	z-index: 10;
 }
 #fond7{
-	background: url(images/fond7.jpg) 50% 0 no-repeat fixed;
-	background-color:#f7ca7d;
-	background-size:1200px;
+	 background: url() center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond7 .bg{
-	background: url(images/7.png) 50% 84% no-repeat fixed;
+	2
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -1289,13 +1362,18 @@ color: white;
 	z-index: 10;
 }
 #fond8{
-	background: url(images/fond8.jpg) 50% 0 no-repeat fixed;
-	background-color:#fbdff8;
-	background-size:1200px;
+	 background: url('images/') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond8 .bg{
@@ -1307,13 +1385,18 @@ color: white;
 	z-index: 10;
 }
 #fond9{
-	background: url(images/fond9.jpg) 50% 0 no-repeat fixed;
-	background-color:#c6deff;
-	background-size:1200px;
+	 background: url('images/') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond9 .bg{
@@ -1325,10 +1408,10 @@ color: white;
 	z-index: 10;
 }
 #fond10{
-	background: url(images/fond10.jpg) 50% 0 no-repeat fixed;
+
 	background-color:black;
 	background-size:1200px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1346,13 +1429,13 @@ color: white;
 	background-color:#f8c075;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond11 .bg{
-	background: url(images/11.png) 50% 80% no-repeat fixed;
+	background: url(images/1.png) 50% 80% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -1364,7 +1447,7 @@ color: white;
 	background-color:black;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1381,7 +1464,7 @@ color: white;
 	background: url(images/fond13.jpg) 50% 0 no-repeat fixed;
 	background-color:black;
 	background-size:1200px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1399,13 +1482,13 @@ color: white;
 	background-color:#dbdbdb;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond14 .bg{
-	background: url(images/14.png) 50% 83.5% no-repeat fixed;
+	background: url(images/17.png) 50% 83.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -1417,7 +1500,7 @@ color: white;
 	background-color:#fddcae;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1435,7 +1518,7 @@ color: white;
 	background-color:#fb9d79;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1453,7 +1536,7 @@ color: white;
 	background-color:#f6978f;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1471,11 +1554,12 @@ color: white;
 @media (min-height:840px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
 	background-size:1200px;
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1497,11 +1581,12 @@ background-color:#000;
 @media (min-height:860px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
 	background-size:1200px;
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1523,10 +1608,11 @@ background-color:#000;
 @media (min-height:900px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 	background-color:#000;
 	background-size:1200px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1549,7 +1635,7 @@ background-color:#000;
 	background: url(images/bg2.jpeg) 50% no-repeat fixed;
 	
 	background-size:1200px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1571,7 +1657,7 @@ background-color:#000;
 	background-color:#b1deed;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1590,7 +1676,7 @@ color: white;
 	background-color:#f79cc1;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1609,7 +1695,7 @@ color: white;
 	background-color:#abe7f4;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1628,7 +1714,7 @@ color: white;
 	background-color:b;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1642,13 +1728,18 @@ color: white;
 	z-index: 10;
 }
 #fond6{
-	background: url(images/fond6.jpg) 50% 0 no-repeat fixed;
-	background-color:#a0e3ff;
-	background-size:1200px;
+	background: url('images/bgr3.jpg') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond6 .bg{
@@ -1660,17 +1751,22 @@ color: white;
 	z-index: 10;
 }
 #fond7{
-	background: url(images/fond7.jpg) 50% 0 no-repeat fixed;
-	background-color:#f7ca7d;
-	background-size:1200px;
+	 background: url() center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond7 .bg{
-	background: url(images/7.png) 50% 84% no-repeat fixed;
+	2
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -1678,13 +1774,18 @@ color: white;
 	z-index: 10;
 }
 #fond8{
-	background: url(images/fond8.jpg) 50% 0 no-repeat fixed;
-	background-color:#fbdff8;
-	background-size:1200px;
+	 background: url('images/') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond8 .bg{
@@ -1696,13 +1797,18 @@ color: white;
 	z-index: 10;
 }
 #fond9{
-	background: url(images/fond9.jpg) 50% 0 no-repeat fixed;
-	background-color:#c6deff;
-	background-size:1200px;
+	 background: url('images/') center center / cover no-repeat fixed;
 
-color: white;
-	height: 120%;
-	padding:0;	
+	background-color:#000;
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	width:100%;
+	margin: 0 auto;
+	padding-top:0;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
 }
 
 #fond9 .bg{
@@ -1714,10 +1820,10 @@ color: white;
 	z-index: 10;
 }
 #fond10{
-	background: url(images/fond10.jpg) 50% 0 no-repeat fixed;
+
 	background-color:black;
 	background-size:1200px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1735,13 +1841,13 @@ color: white;
 	background-color:#f8c075;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond11 .bg{
-	background: url(images/11.png) 50% 80% no-repeat fixed;
+	background: url(images/1.png) 50% 80% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -1753,7 +1859,7 @@ color: white;
 	background-color:black;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1771,7 +1877,7 @@ color: white;
 	background-color:black;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1789,13 +1895,13 @@ color: white;
 	background-color:#dbdbdb;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond14 .bg{
-	background: url(images/14.png) 50% 83.5% no-repeat fixed;
+	background: url(images/17.png) 50% 83.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -1807,7 +1913,7 @@ color: white;
 	background-color:#fddcae;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1825,7 +1931,7 @@ color: white;
 	background-color:#fb9d79;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1843,7 +1949,7 @@ color: white;
 	background-color:#f6978f;
 	background-size:1200px;
 
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -1861,11 +1967,12 @@ color: white;
 @media (min-height:940px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
 	background-size:1200px;
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1887,11 +1994,12 @@ background-color:#000;
 @media (min-height:980px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
 	background-size:1200px;
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1913,11 +2021,12 @@ background-color:#000;
 @media (min-height:1020px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 background-color:#000;
 	background-size:1200px;
 	z-index:2;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1939,10 +2048,11 @@ background-color:#000;
 @media (min-height:1070px) {
 	
 	#fond19{
-	background: url(images/bg1.jpg) 50% no-repeat fixed;
+	background: url('images/bgr1.jpg') center center / cover no-repeat fixed;
+
 	background-color:#000;
 	background-size:1300px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1965,7 +2075,7 @@ background-color:#000;
 	background: url(images/bg2.jpeg) 50% no-repeat fixed;
 	
 	background-size:1300px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	width:100%;
 	margin: 0 auto;
@@ -1985,7 +2095,7 @@ background-color:#000;
 #third{
 	background: url(images/bg3.jpeg) 50% 0 no-repeat fixed;
 	background-color:#b1deed;	background-size:1300px;
-color: white;
+width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2004,7 +2114,7 @@ color: white;
 	background-color:#f79cc1;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2023,7 +2133,7 @@ color: white;
 	background-color:#abe7f4;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2042,7 +2152,7 @@ color: white;
 	background-color:b;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2056,11 +2166,11 @@ color: white;
 	z-index: 10;
 }
 #fond6{
-	background: url(images/fond6.jpg) 50% 0 no-repeat fixed;
+	background: url(images/bgr3.jpg) 50% 0 no-repeat fixed;
 	background-color:#a0e3ff;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2074,17 +2184,17 @@ color: white;
 	z-index: 10;
 }
 #fond7{
-	background: url(images/fond7.jpg) 50% 0 no-repeat fixed;
-	background-color:#f7ca7d;
+	background: url() center center / cover no-repeat fixed;
+	background-size: cover;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond7 .bg{
-	background: url(images/7.png) 50% 84% no-repeat fixed;
+	2
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -2092,11 +2202,11 @@ color: white;
 	z-index: 10;
 }
 #fond8{
-	background: url(images/fond8.jpg) 50% 0 no-repeat fixed;
+	background: url(images/) 50% 0 no-repeat fixed;
 	background-color:#fbdff8;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2110,11 +2220,11 @@ color: white;
 	z-index: 10;
 }
 #fond9{
-	background: url(images/fond9.jpg) 50% 0 no-repeat fixed;
+	background: url(images/bgr9.jpg) 50% 0 no-repeat fixed;
 	background-color:#c6deff;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2128,10 +2238,10 @@ color: white;
 	z-index: 10;
 }
 #fond10{
-	background: url(images/fond10.jpg) 50% 0 no-repeat fixed;
+
 	background-color:black;
 	background-size:1300px;
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2149,13 +2259,13 @@ color: white;
 	background-color:#f8c075;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond11 .bg{
-	background: url(images/11.png) 50% 80% no-repeat fixed;
+	background: url(images/1.png) 50% 80% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -2167,7 +2277,7 @@ color: white;
 	background-color:black;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2185,7 +2295,7 @@ color: white;
 	background-color:black;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2203,13 +2313,13 @@ color: white;
 	background-color:#dbdbdb;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
 
 #fond14 .bg{
-	background: url(images/14.png) 50% 83.5% no-repeat fixed;
+	background: url(images/17.png) 50% 83.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -2221,7 +2331,7 @@ color: white;
 	background-color:#fddcae;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2239,7 +2349,7 @@ color: white;
 	background-color:#fb9d79;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
@@ -2257,7 +2367,7 @@ color: white;
 	background-color:#f6978f;
 	background-size:1300px;
 
-	color: white;
+	width: 100%;
 	height: 120%;
 	padding:0;	
 }
